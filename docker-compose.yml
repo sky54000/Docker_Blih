@@ -3,8 +3,10 @@ services:
   blih:
     build: ./
     environment:
-        EPITECH_MAIL: quentin.le-baron@epitech.eu
+        EPITECH_MAIL: 'prenom.nom@epitech.eu'
         EPITECH_PASSWORD: 'password'
-
+        REPO_NAME: 'stageTEK5_2018_rapport'
+        EPITECH_LOGIN: 'le-bar_q'
+        COMMIT_MESSAGE: "Mon premier docker commit <3 amour sur vous."
 volumes:
   data:
