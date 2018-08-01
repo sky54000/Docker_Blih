@@ -60,7 +60,7 @@ class blih:
     token = property(token_get, token_set)
 
     def token_calc(self):
-        self._token = bytes(hashlib.sha512(bytes(getpass.getpass(), 'utf8')).hexdigest(), 'utf8')
+        self._token = bytes(hashlib.sha512(bytes(os.environ.get('EPITECH_PASSWORD'), 'utf8')).hexdigest(), 'utf8')
 
     def sign_data(self, data=None):
         signature = hmac.new(self._token, msg=bytes(self._user, 'utf8'), digestmod=hashlib.sha512)

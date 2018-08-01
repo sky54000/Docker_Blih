@@ -2,6 +2,9 @@ version: "3"
 services:
   blih:
     build: ./
-    
+    environment:
+        EPITECH_MAIL: quentin.le-baron@epitech.eu
+        EPITECH_PASSWORD: 'password'
+
 volumes:
   data:
