@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 COPY packages/blih.py /tmp/blih.py
 COPY requirements.txt /tmp/requirements.txt
-COPY project /tmp/
+COPY project/ /tmp/project
 
 RUN apt-get update; \
     DEBIAN_FRONTEND=noninteractive  apt-get install -y openssh-client python3 python3-pip git php-dev; \

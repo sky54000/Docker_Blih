@@ -17,14 +17,17 @@ echo $REPO_NAME" permission."
 
 git config --global user.name $EPITECH_MAIL
 git config --global user.email $EPITECH_MAIL
+git config --global user.password $EPITECH_PASSWORD
+
+ssh-keyscan -H git.epitech.eu >> ~/.ssh/known_hosts
 
 cd /tmp/
 git clone git@git.epitech.eu:/$EPITECH_LOGIN/$REPO_NAME
 
 cd  $REPO_NAME/
-mv /tmp/project/* .
-git add -A
-git commit -m $COMMIT_MESSAGE
+mv /tmp/project/* .;
+git add -A *;
+git commit -m "$COMMIT_MESSAGE";
 git push
 
 python3 /tmp/blih.py -u $EPITECH_MAIL sshkey delete uploadSystem
