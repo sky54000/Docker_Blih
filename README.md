@@ -19,7 +19,7 @@ we have to use the command: `git`
 
 The project give read permisson to 'ramassage-tek'.
 
-Please be careful when using this project, after executing it, always verify your submit with `git clone`.
+Please be careful when using this project, after executing it, always verify your submit using `make logs`.
 
 ## Configuration
 
