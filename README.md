@@ -12,12 +12,12 @@ __Summary__:
 
 ## Description
 
-This project goal is to simplify the repository creation with blih.
+This project goal is to simplify the repository creation and file commits/push with blih.
 
 The project builds and runs an Ubuntu docker with blih, then blih create your repository.
-All file in `./project` are moved into this new repository, that is pushed next.
+All file in `./project` are moved into this new repository, to finally make a git commit and git push in it.
 
-It is only a tool to create the repository, you must manage your git repository, with `git`.
+The project give read permisson to 'ramassage-tek'.
 
 ## Configuration
 
@@ -159,3 +159,8 @@ _Makefile commands available_:
 - [Epitech website](http://www.epitech.eu)
 - [Docker](https://www.docker.com)
 - [Docker-compose](https://docs.docker.com/compose/)
+
+## Legals
+We maked this project to simplify the task of EPITECH students, but they are
+responsible of what they submit to the school. Consequently we cannot be liable if
+they encounters any problems using this repository.
