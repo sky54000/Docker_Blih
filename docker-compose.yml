@@ -1,12 +1,35 @@
 version: "3"
 services:
-  blih:
-    build: ./
+  create-repository:
+    build:
+      context: ./
+      dockerfile: Dockerfile
     environment:
         EPITECH_MAIL: 'prenom.nom@epitech.eu'
         EPITECH_PASSWORD: 'password'
         REPO_NAME: 'stageTEK5_2018_rapport'
         EPITECH_LOGIN: 'le-bar_q'
         COMMIT_MESSAGE: "Mon premier docker commit <3 amour sur vous."
+  clone:
+    build:
+      context: ./
+      dockerfile: DockerfileClone
+    environment:
+        EPITECH_MAIL: 'prenom.nom@epitech.eu'
+        EPITECH_PASSWORD: 'password'
+        REPO_NAME: 'stageTEK5_2018_rapport'
+        EPITECH_LOGIN: 'le-bar_q'
+    volumes:
+      - ./Cloned-volume:/tmp/project
+  push:
+    build:
+      context: ./
+      dockerfile: DockerfilePush
+    environment:
+        EPITECH_MAIL: 'prenom.nom@epitech.eu'
+        EPITECH_PASSWORD: 'password'
+        REPO_NAME: 'stageTEK5_2018_rapport'
+        EPITECH_LOGIN: 'le-bar_q'
+
 volumes:
   data:
