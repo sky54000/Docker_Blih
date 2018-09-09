@@ -12,12 +12,15 @@ __Summary__:
 
 ## Description
 
-This project goal is to simplify the repository creation and file commits/push with blih.
+This project goal is to simplify the repository creation and file commits/push with blih from EPITECH.
 
 The project builds and runs an Ubuntu docker with blih, then blih create your repository.
 All file in `./project` are moved into this new repository, to finally make a git commit and git push in it.
+The commands git add and git commit are not handle by the script, you have to it yourself and then you can use the push command.
 
 The project give read permisson to 'ramassage-tek'.
+
+To be sure that your deliver has been done nicely try to use the clone command. If you see your files in the Cloned-volume folder, then the delivery encontered no problems.
 
 ## Configuration
 
@@ -49,7 +52,7 @@ The project give read permisson to 'ramassage-tek'.
 
 ## Create
 
-This command creates the repository with `blih` and pushes all `project/` files.
+This command creates the repository with `blih` and pushes all files in `project/`.
 
 __Run :__
 
@@ -91,9 +94,8 @@ make clone; make logs
 
 This command push all files in `project` to Epitech.
 
-Before using this command clone your repository move the `.git` to your actual project.
-`git add` and `git commit`, resolve conflicts and then you can add all the project (with `.git`)
-to the folder `project/`.
+Before using this command clone your repository move the `.git` to your actual `project`.
+Commands `git add` and `git commit` are not handle by the script. You have to resolve conflicts and then you can add all the project (with `.git`) to the folder `project/`.
 
 you can now run the push.
 
