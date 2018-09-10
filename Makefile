@@ -41,8 +41,10 @@ up_push:
 
 # Utils rules
 delete_key:
+	make set_password
 	$(DC) $(BUILD) delete_key
 	$(DC) $(UP) delete_key
+	make reset_password
 
 ps:
 	$(DC) ps
