@@ -22,6 +22,8 @@ The project give read permisson to 'ramassage-tek'.
 
 To be sure that your deliver has been done nicely try to use the clone command. If you see your files in the Cloned-volume folder, then the delivery encontered no problems.
 
+After each commands, you are asked to input your password from a prompt. This password is then deleted after the execution.
+
 ## Configuration
 
 - Requirements:
