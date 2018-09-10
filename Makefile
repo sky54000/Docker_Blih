@@ -48,7 +48,11 @@ ps:
 	$(DC) ps
 
 logs:
+ifndef service
 	$(DC) logs -f
+else
+	$(DC) logs -f $(service)
+endif
 
 set_password:
 	@sed -ie "s~\(EPITECH_PASSWORD: \)\(.*\)~\1'${PASSWORD}'~" $(FILE)
