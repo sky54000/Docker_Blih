@@ -31,5 +31,15 @@ services:
         REPO_NAME: 'stageTEK5_2018_rapport'
         EPITECH_LOGIN: 'le-bar_q'
 
+  delete_key:
+    build:
+      context: ./
+      dockerfile: DockerfileDeleteKey
+    environment:
+        EPITECH_MAIL: 'prenom.nom@epitech.eu'
+        EPITECH_PASSWORD: 'password'
+        REPO_NAME: 'stageTEK5_2018_rapport'
+        EPITECH_LOGIN: 'le-bar_q'
+
 volumes:
   data:
