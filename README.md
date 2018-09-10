@@ -30,6 +30,7 @@ After each commands, you are asked to input your password from a prompt. This pa
   - [Docker](https://www.docker.com)
   - [Docker-compose](https://docs.docker.com/compose/)
 
+Think to add Docker to your sudo group. You can do it with this command: `sudo usermod -aG docker $USER` or add `sudo` before the make command. 
 
 - `docker-compose.yml`
 ```
