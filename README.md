@@ -9,6 +9,9 @@ __Summary__:
 - [Clone](#clone)
 - [Push](#push)
 - [Documentation](#documentation)
+- [Reference](#reference)
+- [Legals](#legals)
+- [Issues](#issues)
 
 ## Description
 
@@ -150,6 +153,9 @@ _Makefile commands available_:
 |                    |                                                                      |
 |   `make up_push`   | run service (push)                                                   |
 |                    |                                                                      |
+| `make delete_key`  | Delete the ssh key                                                 |
+|                    |                                                                      |
+|                    |                                                                      |
 |     `make ps`      | list container                                                       |
 |                    |                                                                      |
 |    `make logs`     | display all platform logs                                            |
@@ -169,3 +175,11 @@ _Makefile commands available_:
 We maked this project to simplify the task of EPITECH students, but they are
 responsible of what they submit to the school. Consequently we cannot be liable if
 they encounters any problems using this repository.
+
+## Issues
+If you enconter this error message:
+`HTTP Error 401
+Error message: 'Bad token'`
+You probably made a mistake in your password. In this case to be able to continue using the script, you have to delete the ssh key registered using the command `make key_delete; make logs`
+
+For any other issues remember to verify information you input in the docker-compose.yml
