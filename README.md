@@ -33,9 +33,12 @@ After each commands, you are asked to input your password from a prompt. This pa
   - [Docker](https://www.docker.com)
   - [Docker-compose](https://docs.docker.com/compose/)
 
-Think to add Docker to your sudo group. You can do it with this command: `sudo usermod -aG docker $USER` or add `sudo` before the make command. 
+Think to add Docker to your sudo group. You can do it with this command: `sudo usermod -aG docker $USER` or add `sudo` before the make command.
 
 - `docker-compose.yml`
+You have to edit this file and entering your own information to make work the script.
+
+The password is not needed, it will be asked to the execution.
 ```
   EPITECH_MAIL: 'prenom.nom@epitech.eu'                           # Epitech mail
   EPITECH_PASSWORD: 'password'                                    # Epitech password
@@ -46,6 +49,7 @@ Think to add Docker to your sudo group. You can do it with this command: `sudo u
 - `project`
 
   All file in this folder will be moved into the git repository then push.
+  In this example, we push the `stageTEK5_2018_rapport.pdf` file
   ```
   $ tree -L 2
   .
